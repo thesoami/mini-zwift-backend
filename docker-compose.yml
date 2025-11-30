@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:16
+    container_name: mini_zwift_db
+    environment:
+      POSTGRES_DB: mini_zwift
+      POSTGRES_USER: mini_zwift_user
+      POSTGRES_PASSWORD: secretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
