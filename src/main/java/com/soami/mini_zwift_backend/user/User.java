@@ -9,11 +9,12 @@ import java.time.Instant;
 import java.util.UUID;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class User {
     private UUID id;
     private String email;
+    private String displayName;
     private Instant createdAt;
 }
