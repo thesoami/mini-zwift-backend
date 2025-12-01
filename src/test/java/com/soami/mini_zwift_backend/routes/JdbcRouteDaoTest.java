@@ -1,5 +1,7 @@
 package com.soami.mini_zwift_backend.routes;
 
+import com.soami.mini_zwift_backend.routes.dao.JdbcRouteDao;
+import com.soami.mini_zwift_backend.routes.model.Route;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.test.autoconfigure.AutoConfigureTestDatabase;
@@ -14,11 +16,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @JdbcTest
 @AutoConfigureTestDatabase (replace = AutoConfigureTestDatabase.Replace.NONE)
-@Import(JdbcRoutesDao.class)
+@Import(JdbcRouteDao.class)
 class JdbcRouteDaoTest {
 
     @Autowired
-    private JdbcRoutesDao jdbcRouteDao;
+    private JdbcRouteDao jdbcRouteDao;
 
     @Test
     void create_and_findById_roundTrip() {

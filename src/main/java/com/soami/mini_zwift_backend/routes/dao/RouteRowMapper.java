@@ -1,11 +1,12 @@
-package com.soami.mini_zwift_backend.routes;
+package com.soami.mini_zwift_backend.routes.dao;
 
+import com.soami.mini_zwift_backend.routes.model.Route;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;
 
-public class RoutesRowMapper implements RowMapper<Route> {
+public class RouteRowMapper implements RowMapper<Route> {
 
     @Override
     public Route mapRow(ResultSet resultSet, int rowNum) throws SQLException {

@@ -1,5 +1,6 @@
-package com.soami.mini_zwift_backend.routes;
+package com.soami.mini_zwift_backend.routes.dao;
 
+import com.soami.mini_zwift_backend.routes.model.Route;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -9,12 +10,12 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
-public class JdbcRoutesDao implements  RoutesDao {
+public class JdbcRouteDao implements RouteDao {
 
     private final JdbcTemplate jdbcTemplate;
-    private final RoutesRowMapper rowMapper = new RoutesRowMapper();
+    private final RouteRowMapper rowMapper = new RouteRowMapper();
 
-    public JdbcRoutesDao(JdbcTemplate jdbcTemplate) { this.jdbcTemplate = jdbcTemplate; }
+    public JdbcRouteDao(JdbcTemplate jdbcTemplate) { this.jdbcTemplate = jdbcTemplate; }
 
     @Override
     public Route create(String name, Double distance) {

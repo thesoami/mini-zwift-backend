@@ -1,4 +1,4 @@
-package com.soami.mini_zwift_backend.user;
+package com.soami.mini_zwift_backend.user.service;
 
 import com.soami.mini_zwift_backend.user.dao.UserDao;
 import com.soami.mini_zwift_backend.user.exceptions.InvalidUserDataException;

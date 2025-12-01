@@ -2,7 +2,7 @@ package com.example.zwift.user;
 
 import com.soami.mini_zwift_backend.user.model.User;
 import com.soami.mini_zwift_backend.user.dao.UserDao;
-import com.soami.mini_zwift_backend.user.UserService;
+import com.soami.mini_zwift_backend.user.service.UserService;
 import com.soami.mini_zwift_backend.user.exceptions.InvalidUserDataException;
 import com.soami.mini_zwift_backend.user.exceptions.UserNotFoundException;
 import org.junit.jupiter.api.Test;

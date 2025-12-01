@@ -1,4 +1,4 @@
-package com.soami.mini_zwift_backend.routes;
+package com.soami.mini_zwift_backend.routes.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
