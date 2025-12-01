@@ -15,6 +15,6 @@ import java.util.UUID;
 public class Routes {
     private UUID id;
     private String name;
-    private Integer distanceKilometers;
+    private Double distanceKm;
     private Instant createdAt;
 }
