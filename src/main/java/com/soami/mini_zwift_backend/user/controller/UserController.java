@@ -1,6 +1,6 @@
 package com.soami.mini_zwift_backend.user.controller;
 
-import com.soami.mini_zwift_backend.user.UserService;
+import com.soami.mini_zwift_backend.user.service.UserService;
 import com.soami.mini_zwift_backend.user.dto.CreateUserRequest;
 import com.soami.mini_zwift_backend.user.model.User;
 import lombok.RequiredArgsConstructor;
