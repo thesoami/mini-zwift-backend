@@ -12,7 +12,7 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Routes {
+public class Route {
     private UUID id;
     private String name;
     private Double distanceKm;

@@ -5,13 +5,13 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface RoutesDao {
-    Routes create(String name, Double distanceKm);
+    Route create(String name, Double distanceKm);
 
-    Optional<Routes> findById(UUID id);
+    Optional<Route> findById(UUID id);
 
-    Optional<Routes> findByName(String name);
+    Optional<Route> findByName(String name);
 
-    List<Routes> findAll();
+    List<Route> findAll();
 
     int delete(UUID id);
 }
