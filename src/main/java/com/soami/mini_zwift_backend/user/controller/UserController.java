@@ -1,4 +1,4 @@
-package com.example.zwift.user;
+package com.soami.mini_zwift_backend.user.controller;
 
 import com.soami.mini_zwift_backend.user.UserService;
 import com.soami.mini_zwift_backend.user.dto.CreateUserRequest;

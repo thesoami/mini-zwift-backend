@@ -1,8 +1,6 @@
-package com.example.zwift.user;
+package com.soami.mini_zwift_backend.user.dao;
 
-import com.soami.mini_zwift_backend.user.User;
-import com.soami.mini_zwift_backend.user.UserDao;
-import com.soami.mini_zwift_backend.user.UserRowMapper;
+import com.soami.mini_zwift_backend.user.model.User;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

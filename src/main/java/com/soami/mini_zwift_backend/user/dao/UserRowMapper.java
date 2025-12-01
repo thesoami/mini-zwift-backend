@@ -1,9 +1,9 @@
-package com.soami.mini_zwift_backend.user;
+package com.soami.mini_zwift_backend.user.dao;
 
+import com.soami.mini_zwift_backend.user.model.User;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.Instant;
 import java.util.UUID;
 
 public class UserRowMapper implements RowMapper<User> {
