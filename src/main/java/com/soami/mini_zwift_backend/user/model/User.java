@@ -1,4 +1,4 @@
-package com.soami.mini_zwift_backend.user;
+package com.soami.mini_zwift_backend.user.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

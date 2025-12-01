@@ -1,4 +1,6 @@
-package com.soami.mini_zwift_backend.user;
+package com.soami.mini_zwift_backend.user.dao;
+
+import com.soami.mini_zwift_backend.user.model.User;
 
 import java.util.List;
 import java.util.Optional;

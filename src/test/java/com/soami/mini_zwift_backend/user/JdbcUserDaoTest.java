@@ -1,5 +1,6 @@
 package com.soami.mini_zwift_backend.user;
 
+import com.soami.mini_zwift_backend.user.model.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +11,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
-import com.example.zwift.user.JdbcUserDao;
+import com.soami.mini_zwift_backend.user.dao.JdbcUserDao;
 import org.springframework.jdbc.core.JdbcTemplate;
-
-import java.util.Optional;
 
 @JdbcTest
 @AutoConfigureTestDatabase( replace = AutoConfigureTestDatabase.Replace.NONE)
-@Import(com.example.zwift.user.JdbcUserDao.class)
+@Import(JdbcUserDao.class)
 public class JdbcUserDaoTest {
 
     @Autowired
